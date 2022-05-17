@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">G Eleven</string>
+
+
+    <string name="btnStart">Finish</string>
+    <string name="btnNext">Next</string>
+    <string name="slide_text_details">Zak can be customized and used for any niche. The vast possibilities of this template makes it multi purpose.</string>
+    <string name="slide1_text">Gaming Collection</string>
+    <string name="slide2_text">Home Decerotation</string>
+    <string name="slide3_text">G11 Gaming zone</string>
+    <string name="search_hint_text">What would you like to buy?</string>
+    <string name="todo">TODO</string>
+    <string name="category_text">Category</string>
+    <string name="wishlist_text">Wishlist</string>
+    <string name="cart_text">Cart</string>
+    <string name="account_text">Account</string>
+    <string name="login_phone_edit_hint">Phone Number</string>
+    <string name="login_pass_edit_hint">Password</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+
+
+    <string name="sign_up_condition">I agree to the <b>Privacy Policy</b> and <u>terms &amp; Conditions</u> of Limarket</string>
+    <string name="hot_sales_50_off"><i>Hot Sales</i> <b>50% OFF</b></string>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#72142C"
+    tools:context=".activity.SplashActivity">
+
+    <ImageView
+        android:id="@+id/spg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/g"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gameleven"
+        android:textStyle="bold"
+        android:layout_below="@id/spg"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>
