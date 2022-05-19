@@ -2,25 +2,31 @@ package com.soft.gameelevenecommerceapp.model;
 
 public class CategoryModel {
 
-    String id;
+    int id;
+    int image;
     String title;
-    String image;
 
-    public CategoryModel() {
-    }
 
-    public CategoryModel(String id, String title, String image) {
+    public CategoryModel(int id, int image, String title) {
         this.id = id;
         this.title = title;
         this.image = image;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
+    }
+
+    public int getImage() {
+        return image;
+    }
+
+    public void setImage(int image) {
+        this.image = image;
     }
 
     public String getTitle() {
@@ -31,12 +37,5 @@ public class CategoryModel {
         this.title = title;
     }
 
-    public String getImage() {
-        return image;
-    }
-
-    public void setImage(String image) {
-        this.image = image;
-    }
 
 }

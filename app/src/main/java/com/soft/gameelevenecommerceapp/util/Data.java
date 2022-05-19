@@ -5,11 +5,13 @@ import android.graphics.drawable.Drawable;
 import com.soft.gameelevenecommerceapp.R;
 import com.soft.gameelevenecommerceapp.model.BrandModel;
 import com.soft.gameelevenecommerceapp.model.CartModel;
+import com.soft.gameelevenecommerceapp.model.CategoryModel;
 import com.soft.gameelevenecommerceapp.model.DailyFeaturesModel;
 import com.soft.gameelevenecommerceapp.model.DealsModel;
 import com.soft.gameelevenecommerceapp.model.HotCategoryModel;
 import com.soft.gameelevenecommerceapp.model.ProductModel;
 import com.soft.gameelevenecommerceapp.model.SaleProductModel;
+import com.soft.gameelevenecommerceapp.model.SubCategoryModel;
 import com.soft.gameelevenecommerceapp.model.WishListModel;
 
 import java.util.ArrayList;
@@ -125,4 +127,34 @@ public class Data {
         return list;
     }
 
+
+    public List<CategoryModel> getAllCategoriesList() {
+        List<CategoryModel> list = new ArrayList<>();
+        list.add(new CategoryModel(1, R.drawable.deals1, "Electronic Device"));
+        list.add(new CategoryModel(2,R.drawable.deals2, "Furnitures Device"));
+        list.add(new CategoryModel(3,R.drawable.deals3, "Casual ag"));
+        list.add(new CategoryModel(4, R.drawable.deals1, "Electronic Device"));
+        list.add(new CategoryModel(5,R.drawable.deals2, "Furnitures Device"));
+        list.add(new CategoryModel(6, R.drawable.deals1, "Electronic Device"));
+        list.add(new CategoryModel(7,R.drawable.deals2, "Furnitures Device"));
+        list.add(new CategoryModel(8,R.drawable.deals3, "Casual ag"));
+        list.add(new CategoryModel(9, R.drawable.deals1, "Electronic Device"));
+        list.add(new CategoryModel(10,R.drawable.deals2, "Furnitures Device"));
+
+        return list;
+    }
+
+
+    public List<SubCategoryModel> getAllSubCategoryList() {
+        List<SubCategoryModel> list = new ArrayList<>();
+        list.add(new SubCategoryModel(1,"Xbox", R.drawable.deals1, R.drawable.deals4,R.drawable.deals2));
+        list.add(new SubCategoryModel(2,"Playstation 4", R.drawable.deals2, R.drawable.deals3,R.drawable.deals1));
+        list.add(new SubCategoryModel(3,"Gaming Setup", R.drawable.deals3, R.drawable.deals2,R.drawable.deals4));
+        list.add(new SubCategoryModel(4,"TV & Audio", R.drawable.deals4, R.drawable.deals1,R.drawable.deals2));
+        list.add(new SubCategoryModel(5,"Merchandise", R.drawable.deals1, R.drawable.deals4,R.drawable.deals3));
+        list.add(new SubCategoryModel(6,"Retro Gaming Consoles", R.drawable.deals2, R.drawable.deals3,R.drawable.deals4));
+        list.add(new SubCategoryModel(7,"Pre Owned (Badel)", R.drawable.deals3, R.drawable.deals2,R.drawable.deals1));
+
+        return list;
+    }
 }

@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ECECE9"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/category_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/deals1" />
+
+
+        <TextView
+            android:id="@+id/category_title"
+            style="@android:style/MediaButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Electronic Device"
+            android:textAlignment="center"
+            android:textColor="#5C5454" />
+
+
+        <View
+            android:background="#F3EEEE"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+</LinearLayout>
