@@ -104,12 +104,12 @@
                         </androidx.viewpager.widget.ViewPager>
 
                         <LinearLayout
+
                             android:id="@+id/SliderDots"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentBottom="true"
-                            android:layout_marginBottom="10dp"
                             android:gravity="center"
+                            android:layout_gravity="bottom"
                             android:orientation="horizontal">
 
                         </LinearLayout>

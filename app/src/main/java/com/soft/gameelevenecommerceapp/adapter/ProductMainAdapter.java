@@ -1,6 +1,7 @@
 package com.soft.gameelevenecommerceapp.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.soft.gameelevenecommerceapp.R;
+import com.soft.gameelevenecommerceapp.activity.ProductActivity;
+import com.soft.gameelevenecommerceapp.activity.ProductDetailsActivity;
 import com.soft.gameelevenecommerceapp.model.ProductModel;
 
 import java.util.List;
@@ -35,9 +38,17 @@ public class ProductMainAdapter extends RecyclerView.Adapter<ProductMainAdapter.
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.productImage.setImageAlpha(productModels.get(position).getImage());
+        holder.productImage.setImageResource(productModels.get(position).getImage());
         holder.productTitle.setText(productModels.get(position).getTitle());
         holder.productPrice.setText(productModels.get(position).getPrice());
+
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                context.startActivity(new Intent(context, ProductDetailsActivity.class));
+            }
+        });
 
     }
 

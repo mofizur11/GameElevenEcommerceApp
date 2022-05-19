@@ -39,7 +39,7 @@ public class DealsAdapter extends RecyclerView.Adapter<DealsAdapter.ViewHolder> 
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
 
-        holder.dealsImage.setImageAlpha(dealsModels.get(position).getImage());
+        holder.dealsImage.setImageResource(dealsModels.get(position).getImage());
      //   holder.dealsBtn.setText(dealsModels.get(position).getShop());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {

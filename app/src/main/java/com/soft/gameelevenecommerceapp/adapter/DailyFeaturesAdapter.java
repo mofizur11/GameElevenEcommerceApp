@@ -38,7 +38,7 @@ public class DailyFeaturesAdapter extends RecyclerView.Adapter<DailyFeaturesAdap
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
 
-        holder.dailyFeaturesImage.setImageAlpha(dailyFeaturesModels.get(position).getImage());
+        holder.dailyFeaturesImage.setImageResource(dailyFeaturesModels.get(position).getImage());
         holder.dailyFeaturesPrice.setText(dailyFeaturesModels.get(position).getPrice());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {

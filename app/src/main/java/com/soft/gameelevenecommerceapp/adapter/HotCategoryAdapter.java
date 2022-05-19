@@ -35,7 +35,7 @@ public class HotCategoryAdapter extends RecyclerView.Adapter<HotCategoryAdapter.
 
     @Override
     public void onBindViewHolder(@NonNull HotCategoryAdapter.ViewHolder holder, int position) {
-        holder.hotCategoriesImage.setImageAlpha(hotCategoryModels.get(position).getImage());
+        holder.hotCategoriesImage.setImageResource(hotCategoryModels.get(position).getImage());
         holder.hotCategoriesModel.setText(hotCategoryModels.get(position).getPrice());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {

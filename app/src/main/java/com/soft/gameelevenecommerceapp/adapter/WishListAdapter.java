@@ -41,7 +41,7 @@ public class WishListAdapter extends RecyclerView.Adapter<WishListAdapter.MyView
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
-        holder.productImage.setImageAlpha(items.get(position).getProductImage());
+        holder.productImage.setImageResource(items.get(position).getProductImage());
         holder.productTitle.setText(items.get(position).getProductName());
         holder.productPrice.setText(items.get(position).getProductPrice());
 

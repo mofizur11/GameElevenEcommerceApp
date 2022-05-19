@@ -1,7 +1,5 @@
 package com.soft.gameelevenecommerceapp.fragment;
 
-import android.content.Intent;
-import android.icu.util.ULocale;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.LayoutInflater;
@@ -27,12 +25,9 @@ import com.soft.gameelevenecommerceapp.adapter.DailyFeaturesAdapter;
 import com.soft.gameelevenecommerceapp.adapter.DealsAdapter;
 import com.soft.gameelevenecommerceapp.adapter.HotCategoryAdapter;
 import com.soft.gameelevenecommerceapp.adapter.ProductAdapter;
-import com.soft.gameelevenecommerceapp.adapter.SaleProductAdapter;
 import com.soft.gameelevenecommerceapp.adapter.SliderAdapter;
 import com.soft.gameelevenecommerceapp.util.Data;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -66,6 +61,12 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.home_fragment, container, false);
+
+
+
+
+
+
         data = new Data();
 
 
@@ -79,33 +80,28 @@ public class HomeFragment extends Fragment {
         dAdapter = new DealsAdapter(data.getAllDealsList(), getContext());
         RecyclerView.LayoutManager dLayoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
         flashDealsRV.setLayoutManager(dLayoutManager);
-        flashDealsRV.setItemAnimator(new DefaultItemAnimator());
         flashDealsRV.setAdapter(dAdapter);
 
 
         dFAdapter = new DailyFeaturesAdapter(data.getAllDailyFeaturesList(), getContext());
         RecyclerView.LayoutManager dFLayoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
         dailyFeaturesRV.setLayoutManager(dFLayoutManager);
-        dailyFeaturesRV.setItemAnimator(new DefaultItemAnimator());
         dailyFeaturesRV.setAdapter(dFAdapter);
 
 
         hCAdapter = new HotCategoryAdapter(data.getAllHotCategoriesList(), getContext());
         RecyclerView.LayoutManager hCLayoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
         HotCategoriesRV.setLayoutManager(hCLayoutManager);
-        HotCategoriesRV.setItemAnimator(new DefaultItemAnimator());
         HotCategoriesRV.setAdapter(hCAdapter);
 
         brandAdapter = new BrandAdapter(data.getAllBrandModelList(), getContext());
         RecyclerView.LayoutManager bLayoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
         brandRV.setLayoutManager(bLayoutManager);
-        brandRV.setItemAnimator(new DefaultItemAnimator());
         brandRV.setAdapter(brandAdapter);
 
         pAdapter = new ProductAdapter(data.getAllProductList(), getContext());
         RecyclerView.LayoutManager pLayoutManager = new GridLayoutManager(getContext(), 2);
         productRV.setLayoutManager(pLayoutManager);
-        productRV.setItemAnimator(new DefaultItemAnimator());
         productRV.setAdapter(pAdapter);
 
 
