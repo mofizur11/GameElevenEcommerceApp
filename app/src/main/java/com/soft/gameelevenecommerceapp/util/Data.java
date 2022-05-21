@@ -9,6 +9,7 @@ import com.soft.gameelevenecommerceapp.model.CategoryModel;
 import com.soft.gameelevenecommerceapp.model.DailyFeaturesModel;
 import com.soft.gameelevenecommerceapp.model.DealsModel;
 import com.soft.gameelevenecommerceapp.model.HotCategoryModel;
+import com.soft.gameelevenecommerceapp.model.OrderModel;
 import com.soft.gameelevenecommerceapp.model.ProductModel;
 import com.soft.gameelevenecommerceapp.model.SaleProductModel;
 import com.soft.gameelevenecommerceapp.model.SubCategoryModel;
@@ -154,6 +155,19 @@ public class Data {
         list.add(new SubCategoryModel(5,"Merchandise", R.drawable.deals1, R.drawable.deals4,R.drawable.deals3));
         list.add(new SubCategoryModel(6,"Retro Gaming Consoles", R.drawable.deals2, R.drawable.deals3,R.drawable.deals4));
         list.add(new SubCategoryModel(7,"Pre Owned (Badel)", R.drawable.deals3, R.drawable.deals2,R.drawable.deals1));
+
+        return list;
+    }
+
+
+    public List<OrderModel> getAllOrderList() {
+        List<OrderModel> list = new ArrayList<>();
+        list.add(new OrderModel(1,"LML56373833", "XAF 50000.00", "DELIVERED","24 FEB,4:30 PM"));
+        list.add(new OrderModel(1,"LML56373833", "XAF 50000.00", "DELIVERED","24 FEB,4:30 PM"));
+        list.add(new OrderModel(1,"LML56373833", "XAF 50000.00", "DELIVERED","24 FEB,4:30 PM"));
+        list.add(new OrderModel(1,"LML56373833", "XAF 50000.00", "DELIVERED","24 FEB,4:30 PM"));
+        list.add(new OrderModel(1,"LML56373833", "XAF 50000.00", "DELIVERED","24 FEB,4:30 PM"));
+        list.add(new OrderModel(1,"LML56373833", "XAF 50000.00", "DELIVERED","24 FEB,4:30 PM"));
 
         return list;
     }

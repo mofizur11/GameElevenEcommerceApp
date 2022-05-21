@@ -28,6 +28,7 @@ import com.soft.gameelevenecommerceapp.adapter.ProductAdapter;
 import com.soft.gameelevenecommerceapp.adapter.SliderAdapter;
 import com.soft.gameelevenecommerceapp.util.Data;
 
+import java.util.Objects;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -61,10 +62,6 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.home_fragment, container, false);
-
-
-
-
 
 
         data = new Data();
@@ -160,7 +157,7 @@ public class HomeFragment extends Fragment {
         drawerCategory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new CategoryFragment(), null).commit();
+                requireActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new CategoryFragment(), null).commit();
             }
         });
 

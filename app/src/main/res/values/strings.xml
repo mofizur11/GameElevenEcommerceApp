@@ -25,4 +25,12 @@
     <string name="desc">Strategies de Survie des Populations Africaines dans une Economie Mondialisee - Lexperience Camerounaise. Strategies de Survie des Populations Africaines dans une Economie Mondialisee - Lexperience Camerounaise. Strategies de Survie des Populations Africaines dans une Economie Mondialisee - Lexperience Camerounaise. Strategies de Survie des Populations Africaines dans une Economie Mondialisee - Lexperience Camerounaise.</string>
     <string name="del"><del>46,0000.00 XAF</del></string>
     <string name="des">Strategies de Survie des Populations Africaines dans une Economie Mondialisee</string>
+
+
+    <string name="first_name">First Name<sup>*</sup></string>
+    <string name="last_name">Last Name<sup>*</sup></string>
+    <string name="contact">Contact Number<sup>*</sup></string>
+    <string name="address">address<sup>*</sup></string>
+    <string name="city">City<sup>*</sup></string>
+    <string name="country">country<sup>*</sup></string>
 </resources>

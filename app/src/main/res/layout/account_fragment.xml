@@ -1,107 +1,302 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#F6F0F0"
-    android:orientation="vertical">
-
-
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:background="#F6F0F0"
+        android:orientation="vertical">
 
-        <ImageButton
-            android:id="@+id/drawer_category"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="wrap_content"
-            android:src="@drawable/ic_baseline_arrow_back_24"
-            android:layout_height="match_parent"/>
-
-        <TextView
-            android:layout_marginTop="18dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Account" />
-
-
-    </LinearLayout>
-
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFFFFF"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:padding="20dp">
-
-        <com.mikhaellopez.circularimageview.CircularImageView
-
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:src="@drawable/slide1"
-            app:civ_border_color="#FFFFFF"
-            app:civ_border_width="4dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Jonathan Smith"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="018373636733"
-            android:textSize="18sp" />
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="#FFFFFF"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:weightSum="4">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginStart="10dp"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/drawer_category"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_arrow_back_24" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="18dp"
+                android:text="Account" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/slide1"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jonathan Smith"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="018373636733"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="@android:color/holo_orange_dark"
+                    android:focusable="true"
+                    android:src="@drawable/account"
+                    android:tint="@android:color/holo_orange_dark"
+                    app:backgroundTint="#FFFFFF"
+                    app:elevation="2dp"
+                    app:fabSize="mini"
+                    app:rippleColor="@android:color/holo_orange_dark" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/order"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order Details"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="5dp"
+                        android:background="#DCCECE" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/account"
+                    android:tint="@android:color/white"
+                    app:backgroundTint="#BFB9B9"
+                    app:elevation="0dp"
+                    app:fabSize="mini"
+                    app:rippleColor="@android:color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Edit Profile"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="5dp"
+                        android:background="#DCCECE" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/account"
+                    android:tint="@android:color/white"
+                    app:backgroundTint="#BFB9B9"
+                    app:elevation="0dp"
+                    app:fabSize="mini"
+                    app:rippleColor="@android:color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="5dp"
+                        android:background="#DCCECE" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/account"
+                    android:tint="@android:color/white"
+                    app:backgroundTint="#BFB9B9"
+                    app:elevation="0dp"
+                    app:fabSize="mini"
+                    app:rippleColor="@android:color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Change Language"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="5dp"
+                        android:background="#DCCECE" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
             android:orientation="horizontal">
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:layout_width="42dp"
                 android:layout_height="42dp"
                 android:layout_margin="5dp"
+                android:clickable="true"
+                android:focusable="true"
                 android:src="@drawable/account"
-                android:backgroundTint="@android:color/holo_orange_dark"
-                android:tint="@android:color/holo_orange_dark"
-                app:backgroundTint="#FFFFFF"
-                app:elevation="2dp"
+                android:tint="@android:color/white"
+                app:backgroundTint="#BFB9B9"
+                app:elevation="0dp"
                 app:fabSize="mini"
-                app:rippleColor="@android:color/holo_orange_dark"
-                android:focusable="true" />
+                app:rippleColor="@android:color/white" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
                 android:layout_margin="5dp"
+                android:layout_marginStart="10dp"
                 android:orientation="vertical">
-
 
 
                 <TextView
@@ -109,217 +304,24 @@
                     android:layout_height="wrap_content"
                     android:text="Order Details"
                     android:textColor="@color/black"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp" />
 
                 <View
-                    android:layout_margin="5dp"
-                    android:background="#DCCECE"
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"/>
+                    android:layout_height="1dp"
+                    android:layout_margin="5dp"
+                    android:background="#DCCECE" />
 
 
             </LinearLayout>
-
         </LinearLayout>
-
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginStart="10dp"
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:layout_width="42dp"
-            android:layout_height="42dp"
-            android:layout_margin="5dp"
-            android:clickable="true"
-            android:src="@drawable/account"
-            android:tint="@android:color/white"
-            app:backgroundTint="#BFB9B9"
-            app:elevation="0dp"
-            app:fabSize="mini"
-            app:rippleColor="@android:color/white"
-            android:focusable="true" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_margin="5dp"
-                android:orientation="vertical">
-
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Edit Profile"
-                    android:textColor="@color/black"
-                    android:textSize="18sp"/>
-
-                <View
-                    android:layout_margin="5dp"
-                    android:background="#DCCECE"
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"/>
-
-
-
-            </LinearLayout>
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginStart="10dp"
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:layout_width="42dp"
-                android:layout_height="42dp"
-                android:layout_margin="5dp"
-                android:clickable="true"
-                android:src="@drawable/account"
-                android:tint="@android:color/white"
-                app:backgroundTint="#BFB9B9"
-                app:elevation="0dp"
-                app:fabSize="mini"
-                app:rippleColor="@android:color/white"
-                android:focusable="true" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_margin="5dp"
-                android:orientation="vertical">
-
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Address"
-                    android:textColor="@color/black"
-                    android:textSize="18sp"/>
-
-                <View
-                    android:layout_margin="5dp"
-                    android:background="#DCCECE"
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"/>
-
-
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginStart="10dp"
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:layout_width="42dp"
-                android:layout_height="42dp"
-                android:layout_margin="5dp"
-                android:clickable="true"
-                android:src="@drawable/account"
-                android:tint="@android:color/white"
-                app:backgroundTint="#BFB9B9"
-                app:elevation="0dp"
-                app:fabSize="mini"
-                app:rippleColor="@android:color/white"
-                android:focusable="true" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_margin="5dp"
-                android:orientation="vertical">
-
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Change Language"
-                    android:textColor="@color/black"
-                    android:textSize="18sp"/>
-
-                <View
-                    android:layout_margin="5dp"
-                    android:background="#DCCECE"
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"/>
-
-
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-
-
     </LinearLayout>
 
-    <LinearLayout
+
+    <!--bottom sheet container-->
+    <FrameLayout
+        android:id="@+id/bottom_sheet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_margin="5dp"
-        android:orientation="horizontal">
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:layout_width="42dp"
-            android:layout_height="42dp"
-            android:layout_margin="5dp"
-            android:clickable="true"
-            android:src="@drawable/account"
-            android:tint="@android:color/white"
-            app:backgroundTint="#BFB9B9"
-            app:elevation="0dp"
-            app:fabSize="mini"
-            app:rippleColor="@android:color/white"
-            android:focusable="true" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_margin="5dp"
-            android:orientation="vertical">
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Order Details"
-                android:textColor="@color/black"
-                android:textSize="18sp"/>
-
-            <View
-                android:layout_margin="5dp"
-                android:background="#DCCECE"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"/>
-
-
-
-        </LinearLayout>
-    </LinearLayout>
-
-
-</LinearLayout>
+        app:layout_behavior="@string/bottom_sheet_behavior" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
