@@ -81,18 +81,17 @@
                 android:layout_height="0dp"
                 android:layout_margin="5dp"
                 android:layout_marginStart="10dp"
+                android:gravity="center"
                 android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:layout_width="42dp"
-                    android:layout_height="42dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:backgroundTint="@android:color/holo_orange_dark"
+                    android:backgroundTint="@android:color/black"
                     android:focusable="true"
-                    android:src="@drawable/account"
-                    android:tint="@android:color/holo_orange_dark"
-                    app:backgroundTint="#FFFFFF"
+                    android:src="@drawable/user"
                     app:elevation="2dp"
                     app:fabSize="mini"
                     app:rippleColor="@android:color/holo_orange_dark" />
@@ -110,7 +109,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Order Details"
-                        android:textColor="@color/black"
+                        android:textColor="@color/icon_selected"
                         android:textSize="18sp" />
 
                     <View
@@ -139,7 +138,7 @@
                     android:layout_margin="5dp"
                     android:clickable="true"
                     android:focusable="true"
-                    android:src="@drawable/account"
+                    android:src="@drawable/user"
                     android:tint="@android:color/white"
                     app:backgroundTint="#BFB9B9"
                     app:elevation="0dp"
@@ -186,7 +185,7 @@
                     android:layout_margin="5dp"
                     android:clickable="true"
                     android:focusable="true"
-                    android:src="@drawable/account"
+                    android:src="@drawable/address"
                     android:tint="@android:color/white"
                     app:backgroundTint="#BFB9B9"
                     app:elevation="0dp"
@@ -234,7 +233,7 @@
                     android:layout_margin="5dp"
                     android:clickable="true"
                     android:focusable="true"
-                    android:src="@drawable/account"
+                    android:src="@drawable/user"
                     android:tint="@android:color/white"
                     app:backgroundTint="#BFB9B9"
                     app:elevation="0dp"
@@ -284,7 +283,7 @@
                 android:layout_margin="5dp"
                 android:clickable="true"
                 android:focusable="true"
-                android:src="@drawable/account"
+                android:src="@drawable/lock"
                 android:tint="@android:color/white"
                 app:backgroundTint="#BFB9B9"
                 app:elevation="0dp"
@@ -302,7 +301,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Order Details"
+                    android:text="Logout"
                     android:textColor="@color/black"
                     android:textSize="18sp" />
 

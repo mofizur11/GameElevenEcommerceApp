@@ -34,7 +34,7 @@
         android:background="#D0F3EFEF"
         android:inputType="textPassword"
         android:drawableStart="@drawable/cart"
-        android:drawableEnd="@drawable/wishlist"
+        android:drawableEnd="@drawable/wish"
         android:hint="@string/login_pass_edit_hint"
         android:padding="15dp" />
 

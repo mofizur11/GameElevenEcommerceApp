@@ -4,10 +4,10 @@
     <item
         android:id="@+id/buttom_category"
         android:title="@string/category_text"
-        android:icon="@drawable/menu"/>
+        android:icon="@drawable/cat_menu"/>
     <item
         android:id="@+id/buttom_wishlist"
-        android:icon="@drawable/wishlist"
+        android:icon="@drawable/wish"
         android:title="@string/wishlist_text"/>
     <item
         android:id="@+id/anchor"
@@ -19,7 +19,7 @@
         android:title="@string/cart_text"/>
     <item
         android:id="@+id/buttom_account"
-        android:icon="@drawable/account"
+        android:icon="@drawable/user"
         android:title="@string/account_text"/>
 
 </menu>
