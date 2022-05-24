@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.soft.gameelevenecommerceapp.R;
 import com.soft.gameelevenecommerceapp.model.HotCategoryModel;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class HotCategoryAdapter extends RecyclerView.Adapter<HotCategoryAdapter.ViewHolder> {
@@ -38,12 +39,32 @@ public class HotCategoryAdapter extends RecyclerView.Adapter<HotCategoryAdapter.
         holder.hotCategoriesImage.setImageResource(hotCategoryModels.get(position).getImage());
         holder.hotCategoriesModel.setText(hotCategoryModels.get(position).getPrice());
 
+        final int color = getRandomColor();
+
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(context, "OK", Toast.LENGTH_SHORT).show();
             }
         });
+
+
+
+    }
+
+
+    private int getRandomColor(){
+
+        List<Integer> colorCode = new ArrayList<>();
+        colorCode.add(R.color.icon_selected);
+        colorCode.add(R.color.flash_deal2);
+        colorCode.add(R.color.flash_deal3);
+        colorCode.add(R.color.flash_deal4);
+
+        int mycolor = colorCode.size();
+
+        return mycolor;
+
     }
 
     @Override

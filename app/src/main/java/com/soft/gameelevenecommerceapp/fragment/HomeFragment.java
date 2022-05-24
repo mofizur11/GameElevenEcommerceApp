@@ -202,7 +202,4 @@ public class HomeFragment extends Fragment {
         super.onPause();
     }
 
-//    public void onLetsClicked(View view) {
-//        startActivity(new Intent(getContext(), MainActivity.class));
-//    }
 }

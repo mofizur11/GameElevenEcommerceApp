@@ -27,7 +27,7 @@ public class OnBoardingActivity extends AppCompatActivity {
     private LinearLayout mDotsLayout;
     private TextView[] mDots;
     private int[] Layouts;
-    private Button  btnNext;
+    private TextView  btnNext;
     private PrefManager prefManager;
 
     @Override
@@ -48,7 +48,7 @@ public class OnBoardingActivity extends AppCompatActivity {
 
         mViewPager = (ViewPager) findViewById(R.id.viewPager);
         mDotsLayout = (LinearLayout) findViewById(R.id.layoutDots);
-        btnNext = (Button) findViewById(R.id.btn_Next);
+        btnNext = findViewById(R.id.btn_Next);
 
         Layouts = new int[] {
                 R.layout.onboarding_one,
@@ -90,8 +90,8 @@ public class OnBoardingActivity extends AppCompatActivity {
     private void addBottomDots(int currentPage) {
         mDots = new TextView[Layouts.length];
 
-        int colorsActive = getResources().getColor(R.color.purple_200);
-        int colorInActive = getResources().getColor(R.color.purple_500);
+        int colorsActive = getResources().getColor(R.color.icon_selected);
+        int colorInActive = getResources().getColor(R.color.text_color_gray);
 
         mDotsLayout.removeAllViews();
         for (int i = 0; i < mDots.length; i++){
@@ -125,11 +125,11 @@ public class OnBoardingActivity extends AppCompatActivity {
             //Changing the Next button text 'Next' / 'GOT iT'
             if (position == Layouts.length - 1){
                 // last page. make button text to GOT IT
-                btnNext.setText(getString(R.string.btnStart));
+                btnNext.setText(getString(R.string.skip));
 
             } else {
                 // still page are left
-                btnNext.setText(getString(R.string.btnNext));
+                btnNext.setText(getString(R.string.skip));
 
             }
         }

@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,6 +21,8 @@ import java.util.List;
 
 public class OrderFragment extends Fragment {
 
+    ImageButton drawerHome;
+
     private ViewPager view_pager;
     private TabLayout tab_layout;
 
@@ -35,6 +38,14 @@ public class OrderFragment extends Fragment {
 
         tab_layout = (TabLayout) view.findViewById(R.id.tab_layout);
         tab_layout.setupWithViewPager(view_pager);
+
+        drawerHome = view.findViewById(R.id.drawer_home);
+        drawerHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                requireActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment(), null).commit();
+            }
+        });
 
         return view;
     }

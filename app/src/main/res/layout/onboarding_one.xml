@@ -5,24 +5,23 @@
     android:orientation="vertical">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:scaleType="fitXY"
         android:src="@drawable/slide1" />
 
     <TextView
-        style="@style/TextAppearance.AppCompat.Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="64dp"
         android:text="@string/slide1_text"
-        android:textColor="#D81D4C"
-        android:textSize="30sp" />
+        android:textColor="@color/icon_selected"
+        android:textSize="22sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:padding="16dp"
         android:text="@string/slide_text_details"
         android:textAlignment="center"

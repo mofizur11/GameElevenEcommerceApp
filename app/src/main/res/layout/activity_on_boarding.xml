@@ -9,36 +9,37 @@
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layoutDots"/>
 
     <LinearLayout
         android:id="@+id/layoutDots"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="100dp"
         android:gravity="center"
         android:orientation="horizontal">
 
     </LinearLayout>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_above="@id/layoutDots"
-        android:alpha=".5"
-        android:background="@android:color/white" />
 
 
-    <Button
+    <TextView
         android:id="@+id/btn_Next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:background="@null"
-        android:text="Next"
-        android:textAllCaps="false"
-        android:textColor="@color/purple_200" />
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:text="SKIP"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="15dp"
+        android:textColor="#423C3C" />
+
+
+
 </RelativeLayout>

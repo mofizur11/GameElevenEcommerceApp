@@ -35,7 +35,7 @@ public class BrandAdapter extends RecyclerView.Adapter<BrandAdapter.ViewHolder> 
     @Override
     public void onBindViewHolder(@NonNull BrandAdapter.ViewHolder holder, int position) {
         holder.brandImage.setImageResource(brandModels.get(position).getImage());
-        holder.brandCImage.setImageResource(brandModels.get(position).getImage());
+        holder.brandCImage.setImageResource(brandModels.get(position).getcImage());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override

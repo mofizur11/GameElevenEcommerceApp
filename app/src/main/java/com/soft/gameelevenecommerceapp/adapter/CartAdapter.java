@@ -12,6 +12,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.soft.gameelevenecommerceapp.R;
 import com.soft.gameelevenecommerceapp.model.CartModel;
 
@@ -45,6 +46,14 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.MyViewHolder> 
         holder.cartModel.setText(items.get(position).getCartModel());
         holder.cartPrice.setText(items.get(position).getCartPrice());
 
+
+        holder.floatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                holder.floatingActionButton.setImageResource(R.drawable.ic_done);
+            }
+        });
+
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -63,6 +72,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.MyViewHolder> 
         ImageView cartImage;
         TextView cartTitle, cartModel, cartPrice, cartCount;
         ImageButton cartCheck, cartPlus, cartMinus;
+        FloatingActionButton floatingActionButton;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -71,6 +81,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.MyViewHolder> 
             cartModel = itemView.findViewById(R.id.cart_model);
             cartPrice = itemView.findViewById(R.id.cart_price);
             cartCount = itemView.findViewById(R.id.cart_count);
+            floatingActionButton = itemView.findViewById(R.id.tick);
 //            cartCheck = itemView.findViewById(R.id.cart_check);
 //            cartPlus = itemView.findViewById(R.id.cart_plus);
 //            cartMinus = itemView.findViewById(R.id.cart_minus);

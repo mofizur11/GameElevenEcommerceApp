@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -17,6 +18,8 @@ import com.soft.gameelevenecommerceapp.util.Data;
 
 
 public class WishListFragment extends Fragment {
+
+    ImageButton drawerHome;
 
     RecyclerView recyclerView;
     WishListAdapter adapter;
@@ -38,7 +41,14 @@ public class WishListFragment extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(adapter);
 
-
+        drawerHome = view.findViewById(R.id.drawer_home);
+        drawerHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                requireActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment(), null).commit();
+            }
+        });
+        
         return view;
     }
 

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="3dp"
     android:background="#FFFFFF"
     android:orientation="horizontal"
@@ -19,7 +19,7 @@
             android:layout_width="64dp"
             android:layout_height="64dp"
             android:layout_margin="10dp"
-            android:src="@drawable/slide1" />
+            android:src="@drawable/headphones" />
 
     </LinearLayout>
 
@@ -69,11 +69,17 @@
             android:layout_weight="1"
             android:gravity="end">
 
-            <RadioButton
-                android:id="@+id/cart_check"
-                android:text=" "
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/tick"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:tint="@android:color/white"
+                app:backgroundTint="#DBDBDB"
+                app:borderWidth="1dp"
+                app:elevation="0dp"
+                app:fabSize="mini" />
 
         </LinearLayout>
 
@@ -83,42 +89,29 @@
             android:layout_weight="1"
             android:gravity="center">
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/cart_plus"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_margin="10dp"
-                android:clickable="true"
-                android:tint="@android:color/white"
-                app:backgroundTint="#BFB9B9"
-                app:elevation="0dp"
-                app:fabSize="mini"
-                app:rippleColor="@android:color/white"
-                android:focusable="true" />
+            <ImageButton
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="#F0F0F0"
+                android:src="@drawable/plus" />
+
 
             <TextView
                 android:id="@+id/cart_count"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:layout_marginTop="6dp"
-                android:text="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="01"
                 android:textAlignment="center"
                 android:textColor="@color/icon_selected"
                 android:textSize="18sp" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/cart_minus"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_margin="10dp"
-                android:clickable="true"
-                android:tint="@android:color/white"
-                app:backgroundTint="#BFB9B9"
-                app:elevation="0dp"
-                app:fabSize="mini"
-                app:rippleColor="@android:color/white"
-                android:focusable="true" />
+            <ImageButton
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="#F0F0F0"
+                android:src="@drawable/minus" />
 
 
         </LinearLayout>

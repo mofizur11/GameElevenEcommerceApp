@@ -1,28 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#72142C"
+    android:background="@drawable/splash"
+    android:gravity="center"
     tools:context=".activity.SplashActivity">
 
     <ImageView
-        android:id="@+id/spg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/g"
-        android:layout_centerInParent="true" />
+        android:layout_width="66dp"
+        android:layout_height="37dp"
+        android:src="@drawable/logo" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Gameleven"
-        android:textStyle="bold"
-        android:layout_below="@id/spg"
-        android:textColor="#FFFFFF"
-        android:textSize="40sp"
-        android:layout_centerInParent="true"
-        />
-</RelativeLayout>
+    <ImageView
+        android:layout_marginTop="3dp"
+        android:layout_width="187dp"
+        android:layout_height="12dp"
+        android:src="@drawable/text_logo" />
+</LinearLayout>

@@ -1,32 +1,32 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="wrap_content"
+    android:layout_width="100dp"
+    android:background="#FFFFFF"
+    android:layout_margin="10dp"
     android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_view"
-        android:layout_width="150dp"
+        app:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
             android:gravity="center"
             android:orientation="vertical">
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#FAF6F6">
+                android:layout_height="wrap_content">
 
                 <ImageView
                     android:id="@+id/hot_categories_image"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_centerHorizontal="true"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/deals1" />
+                    android:src="@drawable/chair" />
             </RelativeLayout>
 
 
@@ -40,7 +40,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
-                    android:background="@drawable/product_item_color"
                     android:padding="10dp"
                     android:text="G11 Chair"
                     android:textAlignment="center"

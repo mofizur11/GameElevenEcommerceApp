@@ -47,6 +47,7 @@
                         android:textColor="#333030" />
 
                     <EditText
+                        android:inputType="textPersonName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/edit_text_round_bg_outline"
@@ -72,6 +73,7 @@
                         android:textColor="#333030" />
 
                     <EditText
+                        android:inputType="textPersonName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/edit_text_round_bg_outline"
@@ -98,6 +100,7 @@
                     android:textColor="#333030" />
 
                 <EditText
+                    android:inputType="textEmailAddress"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/edit_text_round_bg_outline"
@@ -122,6 +125,7 @@
                     android:textColor="#333030" />
 
                 <EditText
+                    android:inputType="number"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/edit_text_round_bg_outline"
@@ -203,6 +207,7 @@
                         android:textColor="#333030" />
 
                     <EditText
+                        android:inputType="text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/edit_text_round_bg_outline"
@@ -237,6 +242,7 @@
                         android:textColor="#333030" />
 
                     <EditText
+                        android:inputType="text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/edit_text_round_bg_outline"
@@ -262,6 +268,7 @@
                         android:textColor="#333030" />
 
                     <EditText
+                        android:inputType="text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/edit_text_round_bg_outline"
@@ -296,6 +303,7 @@
                         android:textColor="#333030" />
 
                     <EditText
+                        android:inputType="number"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/edit_text_round_bg_outline"
@@ -321,6 +329,7 @@
                         android:textColor="#333030" />
 
                     <EditText
+                        android:inputType="text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/edit_text_round_bg_outline"

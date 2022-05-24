@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -17,15 +18,17 @@ import androidx.fragment.app.Fragment;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.soft.gameelevenecommerceapp.R;
+import com.soft.gameelevenecommerceapp.activity.SignInActivity;
 
 public class AccountFragment extends Fragment {
 
+    ImageButton drawerHome;
 
     private BottomSheetBehavior mBehavior;
     private BottomSheetDialog mBottomSheetDialog;
     private View bottom_sheet;
 
-    TextView order,address;
+    TextView order, address, logout;
 
     @Nullable
     @Override
@@ -35,6 +38,7 @@ public class AccountFragment extends Fragment {
 
         address = view.findViewById(R.id.address);
         order = view.findViewById(R.id.order);
+        logout = view.findViewById(R.id.logout);
 
         bottom_sheet = view.findViewById(R.id.bottom_sheet);
         mBehavior = BottomSheetBehavior.from(bottom_sheet);
@@ -49,6 +53,22 @@ public class AccountFragment extends Fragment {
             public void onClick(View view) {
                 requireActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new OrderFragment(), null).commit();
 
+            }
+        });
+
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), SignInActivity.class));
+            }
+        });
+
+
+        drawerHome = view.findViewById(R.id.drawer_home);
+        drawerHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                requireActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment(), null).commit();
             }
         });
 

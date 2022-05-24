@@ -2,8 +2,7 @@
     <string name="app_name">G Eleven</string>
 
 
-    <string name="btnStart">Finish</string>
-    <string name="btnNext">Next</string>
+    <string name="skip">SKIP</string>
     <string name="slide_text_details">Zak can be customized and used for any niche. The vast possibilities of this template makes it multi purpose.</string>
     <string name="slide1_text">Gaming Collection</string>
     <string name="slide2_text">Home Decerotation</string>
@@ -14,8 +13,6 @@
     <string name="wishlist_text">Wishlist</string>
     <string name="cart_text">Cart</string>
     <string name="account_text">Account</string>
-    <string name="login_phone_edit_hint">Phone Number</string>
-    <string name="login_pass_edit_hint">Password</string>
     <string name="forgot_your_password">Forgot your password?</string>
 
 
