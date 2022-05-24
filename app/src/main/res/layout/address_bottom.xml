@@ -42,43 +42,49 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/roboto_regular"
                         android:text="@string/first_name"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-                        android:textColor="#333030" />
+                        android:textColor="#9A9A9A"
+                        android:textSize="15sp" />
 
                     <EditText
-                        android:inputType="textPersonName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/edit_text_round_bg_outline"
+                        android:fontFamily="@font/roboto_regular"
                         android:hint="Enter First name"
-                        android:padding="10dp" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="5dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
-                        android:text="@string/last_name"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-                        android:textColor="#333030" />
-
-                    <EditText
                         android:inputType="textPersonName"
+                        android:padding="15dp"
+                        android:textSize="13sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/last_name"
+                        android:textColor="#9A9A9A"
+                        android:textSize="15sp" />
+
+                    <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/edit_text_round_bg_outline"
+                        android:fontFamily="@font/roboto_regular"
                         android:hint="Enter Last name"
-                        android:padding="10dp" />
+                        android:inputType="textPersonName"
+                        android:padding="15dp"
+                        android:textSize="13sp" />
 
 
                 </LinearLayout>
@@ -95,17 +101,20 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/roboto_regular"
                     android:text="Email"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-                    android:textColor="#333030" />
+                    android:textColor="#9A9A9A"
+                    android:textSize="15sp" />
 
                 <EditText
-                    android:inputType="textEmailAddress"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/edit_text_round_bg_outline"
+                    android:fontFamily="@font/roboto_regular"
                     android:hint="Enter your email"
-                    android:padding="10dp" />
+                    android:inputType="textEmailAddress"
+                    android:padding="15dp"
+                    android:textSize="13sp" />
 
 
             </LinearLayout>
@@ -120,17 +129,20 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/roboto_regular"
                     android:text="@string/contact"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-                    android:textColor="#333030" />
+                    android:textColor="#9A9A9A"
+                    android:textSize="15sp" />
 
                 <EditText
-                    android:inputType="number"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/edit_text_round_bg_outline"
+                    android:fontFamily="@font/roboto_regular"
                     android:hint="Enter your contact Number"
-                    android:padding="10dp" />
+                    android:inputType="number"
+                    android:padding="15dp"
+                    android:textSize="13sp" />
 
 
             </LinearLayout>
@@ -145,16 +157,19 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/roboto_regular"
                     android:text="@string/address"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-                    android:textColor="#333030" />
+                    android:textColor="#9A9A9A"
+                    android:textSize="15sp" />
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/edit_text_round_bg_outline"
+                    android:fontFamily="@font/roboto_regular"
                     android:hint="Enter road no, block/sector"
-                    android:padding="10dp" />
+                    android:padding="15dp"
+                    android:textSize="13sp" />
 
 
             </LinearLayout>
@@ -177,16 +192,19 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/roboto_regular"
                         android:text="Area"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-                        android:textColor="#333030" />
+                        android:textColor="#9A9A9A"
+                        android:textSize="15sp" />
 
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/edit_text_round_bg_outline"
+                        android:fontFamily="@font/roboto_regular"
                         android:hint="Enter area"
-                        android:padding="10dp" />
+                        android:padding="15dp"
+                        android:textSize="13sp" />
 
 
                 </LinearLayout>
@@ -202,17 +220,20 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/roboto_regular"
                         android:text="@string/city"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-                        android:textColor="#333030" />
+                        android:textColor="#9A9A9A"
+                        android:textSize="15sp" />
 
                     <EditText
-                        android:inputType="text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/edit_text_round_bg_outline"
+                        android:fontFamily="@font/roboto_regular"
                         android:hint="Enter city"
-                        android:padding="10dp" />
+                        android:inputType="text"
+                        android:padding="15dp"
+                        android:textSize="13sp" />
 
 
                 </LinearLayout>
@@ -237,17 +258,20 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/roboto_regular"
                         android:text="Region"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-                        android:textColor="#333030" />
+                        android:textColor="#9A9A9A"
+                        android:textSize="15sp" />
 
                     <EditText
-                        android:inputType="text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/edit_text_round_bg_outline"
-                        android:padding="10dp"
-                        android:text=" " />
+                        android:fontFamily="@font/roboto_regular"
+                        android:inputType="text"
+                        android:padding="15dp"
+                        android:text=" "
+                        android:textSize="13sp" />
 
 
                 </LinearLayout>
@@ -263,17 +287,20 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/roboto_regular"
                         android:text="@string/country"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-                        android:textColor="#333030" />
+                        android:textColor="#9A9A9A"
+                        android:textSize="15sp" />
 
                     <EditText
-                        android:inputType="text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/edit_text_round_bg_outline"
-                        android:padding="10dp"
-                        android:text=" " />
+                        android:fontFamily="@font/roboto_regular"
+                        android:inputType="text"
+                        android:padding="15dp"
+                        android:text=" "
+                        android:textSize="13sp" />
 
 
                 </LinearLayout>
@@ -298,17 +325,20 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/roboto_regular"
                         android:text="Zip"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-                        android:textColor="#333030" />
+                        android:textColor="#9A9A9A"
+                        android:textSize="15sp" />
 
                     <EditText
-                        android:inputType="number"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/edit_text_round_bg_outline"
+                        android:fontFamily="@font/roboto_regular"
                         android:hint="Enter ZIP"
-                        android:padding="10dp" />
+                        android:inputType="number"
+                        android:padding="15dp"
+                        android:textSize="13sp" />
 
 
                 </LinearLayout>
@@ -324,17 +354,20 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/roboto_regular"
                         android:text="Company"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-                        android:textColor="#333030" />
+                        android:textColor="#9A9A9A"
+                        android:textSize="15sp" />
 
                     <EditText
-                        android:inputType="text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/edit_text_round_bg_outline"
+                        android:fontFamily="@font/roboto_regular"
                         android:hint="Enter Company"
-                        android:padding="10dp" />
+                        android:inputType="text"
+                        android:padding="15dp"
+                        android:textSize="13sp" />
 
 
                 </LinearLayout>
@@ -348,13 +381,15 @@
                 android:layout_marginTop="10dp"
                 android:orientation="vertical">
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:backgroundTint="@color/icon_selected"
-                    android:padding="10dp"
-                    android:text="SAVE ADDRESS"
-                    android:textColor="@android:color/white" />
+                    android:padding="15dp"
+                    android:text="Save Address"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
 
             </LinearLayout>
 

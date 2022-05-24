@@ -30,4 +30,6 @@
     <string name="address">address<sup>*</sup></string>
     <string name="city">City<sup>*</sup></string>
     <string name="country">country<sup>*</sup></string>
+    <string name="total_sar_500000_00"><b>Total :</b> SAR 500000.00</string>
+    <string name="payeer">Payeer</string>
 </resources>

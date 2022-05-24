@@ -19,10 +19,6 @@
         <item name="windowActionBar">false</item>
     </style>
 
-    <style name="OnBoardingStyle" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
@@ -31,7 +27,6 @@
     <style name="TextAppearance.Subhead.Bold" parent="@style/TextAppearance.AppCompat.Subhead">
         <item name="android:textStyle">bold</item>
     </style>
-
 
 
     <style name="Yellow.Small.AppCompatRatingBar" parent="Base.Widget.AppCompat.RatingBar.Small">

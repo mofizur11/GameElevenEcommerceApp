@@ -27,11 +27,14 @@
         <entry key="..\:/Ecommerce/GameElevenEcommerceApp/app/src/main/res/layout/activity_sign_up.xml" value="0.27353313634444915" />
         <entry key="..\:/Ecommerce/GameElevenEcommerceApp/app/src/main/res/layout/activity_splash.xml" value="0.16875" />
         <entry key="..\:/Ecommerce/GameElevenEcommerceApp/app/src/main/res/layout/address_bottom.xml" value="0.27353313634444915" />
+        <entry key="..\:/Ecommerce/GameElevenEcommerceApp/app/src/main/res/layout/aleart_language.xml" value="0.27353313634444915" />
         <entry key="..\:/Ecommerce/GameElevenEcommerceApp/app/src/main/res/layout/cart_fragment.xml" value="0.25" />
         <entry key="..\:/Ecommerce/GameElevenEcommerceApp/app/src/main/res/layout/category_fragment.xml" value="0.33" />
         <entry key="..\:/Ecommerce/GameElevenEcommerceApp/app/src/main/res/layout/check_out_information.xml" value="0.27353313634444915" />
+        <entry key="..\:/Ecommerce/GameElevenEcommerceApp/app/src/main/res/layout/contact_bottom.xml" value="0.27353313634444915" />
+        <entry key="..\:/Ecommerce/GameElevenEcommerceApp/app/src/main/res/layout/email_bottom.xml" value="0.27353313634444915" />
         <entry key="..\:/Ecommerce/GameElevenEcommerceApp/app/src/main/res/layout/fragment_order.xml" value="0.13980333475844378" />
-        <entry key="..\:/Ecommerce/GameElevenEcommerceApp/app/src/main/res/layout/home_fragment.xml" value="0.33" />
+        <entry key="..\:/Ecommerce/GameElevenEcommerceApp/app/src/main/res/layout/home_fragment.xml" value="0.25" />
         <entry key="..\:/Ecommerce/GameElevenEcommerceApp/app/src/main/res/layout/home_top_section.xml" value="0.27353313634444915" />
         <entry key="..\:/Ecommerce/GameElevenEcommerceApp/app/src/main/res/layout/item_brand.xml" value="0.27353313634444915" />
         <entry key="..\:/Ecommerce/GameElevenEcommerceApp/app/src/main/res/layout/item_cart.xml" value="0.27353313634444915" />
@@ -49,8 +52,10 @@
         <entry key="..\:/Ecommerce/GameElevenEcommerceApp/app/src/main/res/layout/onboarding_one.xml" value="0.25" />
         <entry key="..\:/Ecommerce/GameElevenEcommerceApp/app/src/main/res/layout/onboarding_three.xml" value="0.25" />
         <entry key="..\:/Ecommerce/GameElevenEcommerceApp/app/src/main/res/layout/onboarding_two.xml" value="0.16875" />
+        <entry key="..\:/Ecommerce/GameElevenEcommerceApp/app/src/main/res/layout/payment_bottom.xml" value="0.27353313634444915" />
         <entry key="..\:/Ecommerce/GameElevenEcommerceApp/app/src/main/res/layout/personal_info_details.xml" value="0.27353313634444915" />
         <entry key="..\:/Ecommerce/GameElevenEcommerceApp/app/src/main/res/layout/profile_edit.xml" value="0.27353313634444915" />
+        <entry key="..\:/Ecommerce/GameElevenEcommerceApp/app/src/main/res/layout/save_address.xml" value="0.2632066728452271" />
         <entry key="..\:/Ecommerce/GameElevenEcommerceApp/app/src/main/res/layout/shape_add_cart.xml" value="0.27353313634444915" />
         <entry key="..\:/Ecommerce/GameElevenEcommerceApp/app/src/main/res/layout/wishlist_fragment.xml" value="0.27353313634444915" />
         <entry key="..\:/Ecommerce/GameElevenEcommerceApp/app/src/main/res/menu/buttom_navigation_menu.xml" value="0.27353313634444915" />

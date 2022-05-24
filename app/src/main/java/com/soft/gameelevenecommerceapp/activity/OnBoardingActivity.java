@@ -27,19 +27,14 @@ public class OnBoardingActivity extends AppCompatActivity {
     private LinearLayout mDotsLayout;
     private TextView[] mDots;
     private int[] Layouts;
-    private TextView  btnNext;
+    private TextView btnNext;
     private PrefManager prefManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //full screen activity
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_on_boarding);
 
-
-
-        // Checking for first time launch - before calling setContentView()
         prefManager = new PrefManager(this);
         if (!prefManager.isFirstTimeLaunch()) {
             launchHomeScreen();
@@ -50,7 +45,7 @@ public class OnBoardingActivity extends AppCompatActivity {
         mDotsLayout = (LinearLayout) findViewById(R.id.layoutDots);
         btnNext = findViewById(R.id.btn_Next);
 
-        Layouts = new int[] {
+        Layouts = new int[]{
                 R.layout.onboarding_one,
                 R.layout.onboarding_two,
                 R.layout.onboarding_three};
@@ -94,7 +89,7 @@ public class OnBoardingActivity extends AppCompatActivity {
         int colorInActive = getResources().getColor(R.color.text_color_gray);
 
         mDotsLayout.removeAllViews();
-        for (int i = 0; i < mDots.length; i++){
+        for (int i = 0; i < mDots.length; i++) {
             mDots[i] = new TextView(this);
             mDots[i].setText(Html.fromHtml("&#8226;"));
             mDots[i].setTextSize(35);
@@ -102,12 +97,12 @@ public class OnBoardingActivity extends AppCompatActivity {
             mDotsLayout.addView(mDots[i]);
         }
 
-        if (mDots.length > 0){
+        if (mDots.length > 0) {
             mDots[currentPage].setTextColor(colorsActive);
         }
     }
 
-    private int getItem(int i){
+    private int getItem(int i) {
         return mViewPager.getCurrentItem() + i;
     }
 
@@ -123,7 +118,7 @@ public class OnBoardingActivity extends AppCompatActivity {
             addBottomDots(position);
 
             //Changing the Next button text 'Next' / 'GOT iT'
-            if (position == Layouts.length - 1){
+            if (position == Layouts.length - 1) {
                 // last page. make button text to GOT IT
                 btnNext.setText(getString(R.string.skip));
 
@@ -133,9 +128,11 @@ public class OnBoardingActivity extends AppCompatActivity {
 
             }
         }
+
         @Override
         public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
         }
+
         @Override
         public void onPageScrollStateChanged(int state) {
         }
@@ -144,7 +141,7 @@ public class OnBoardingActivity extends AppCompatActivity {
     public class MyViewPageAdapter extends PagerAdapter {
         private LayoutInflater layoutInflater;
 
-        public MyViewPageAdapter(){
+        public MyViewPageAdapter() {
         }
 
 
@@ -164,12 +161,12 @@ public class OnBoardingActivity extends AppCompatActivity {
         }
 
         @Override
-        public boolean isViewFromObject(View view,Object object) {
+        public boolean isViewFromObject(View view, Object object) {
             return view == object;
         }
 
         @Override
-        public void destroyItem(ViewGroup container, int position,Object object) {
+        public void destroyItem(ViewGroup container, int position, Object object) {
             View view = (View) object;
             container.removeView(view);
         }

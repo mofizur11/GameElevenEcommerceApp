@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F8F8F8"
     android:orientation="vertical">
 
     <LinearLayout
@@ -15,7 +16,7 @@
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:src="@drawable/ic_baseline_arrow_back_24" />
+            android:src="@drawable/back" />
 
         <TextView
             android:layout_width="match_parent"
@@ -28,27 +29,26 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="161dp"
         android:background="#FFFFFF"
         android:gravity="center"
         android:orientation="vertical"
         android:padding="20dp">
 
         <com.mikhaellopez.circularimageview.CircularImageView
-
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:src="@drawable/slide1"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@drawable/person"
             app:civ_border_color="#FFFFFF"
             app:civ_border_width="4dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
             android:text="Jonathan Smith"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textColor="#404040"
+            android:textSize="16sp" />
 
 
     </LinearLayout>
@@ -57,25 +57,29 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:background="#FFFFFF"
         android:orientation="horizontal"
-        android:padding="3dp">
+        android:padding="7dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
+            android:fontFamily="@font/roboto_bold"
             android:text="Personal Information"
-            android:textStyle="bold" />
+            android:textColor="#404040"
+            android:textSize="16sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
+            android:layout_marginEnd="25dp"
+            android:fontFamily="@font/roboto_bold"
             android:text="Edit"
             android:textAlignment="textEnd"
-            android:textColor="#F44336"
-            android:textStyle="bold" />
+            android:textColor="#FC6600"
+            android:textSize="16sp" />
 
 
     </LinearLayout>
@@ -84,7 +88,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="3dp">
+        android:padding="7dp">
 
         <TextView
 
@@ -92,8 +96,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_bold"
             android:text="Name"
-            android:textColor="#333030" />
+            android:textColor="#404040"
+            android:textSize="16sp" />
 
         <TextView
 
@@ -101,7 +107,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:text="Jonathan Smith" />
+            android:fontFamily="@font/roboto_regular"
+            android:text="Jonathan Smith"
+            android:textColor="#404040"
+            android:textSize="16sp" />
 
 
     </LinearLayout>
@@ -110,7 +119,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="3dp">
+        android:padding="7dp">
 
         <TextView
 
@@ -118,8 +127,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_bold"
             android:text="Contact Number"
-            android:textColor="#333030" />
+            android:textColor="#404040"
+            android:textSize="16sp" />
 
         <TextView
 
@@ -127,7 +138,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:text="01567383855" />
+            android:fontFamily="@font/roboto_regular"
+            android:text="01567383855"
+            android:textColor="#404040"
+            android:textSize="16sp" />
 
 
     </LinearLayout>
@@ -136,7 +150,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="3dp">
+        android:padding="7dp">
 
         <TextView
 
@@ -144,8 +158,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_bold"
             android:text="Gender"
-            android:textColor="#333030" />
+            android:textColor="#404040"
+            android:textSize="16sp" />
 
         <TextView
 
@@ -153,7 +169,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:text="Male" />
+            android:fontFamily="@font/roboto_regular"
+            android:text="Male"
+            android:textColor="#404040"
+            android:textSize="16sp" />
 
 
     </LinearLayout>
@@ -162,7 +181,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="3dp">
+        android:padding="7dp">
 
         <TextView
 
@@ -170,8 +189,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_bold"
             android:text="Date of Birth"
-            android:textColor="#333030" />
+            android:textColor="#404040"
+            android:textSize="16sp" />
 
         <TextView
 
@@ -187,25 +208,29 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:background="#FFFFFF"
         android:orientation="horizontal"
-        android:padding="3dp">
+        android:padding="7dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
+            android:fontFamily="@font/roboto_bold"
             android:text="Email Address"
-            android:textStyle="bold" />
+            android:textColor="#404040"
+            android:textSize="16sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
+            android:layout_marginEnd="25dp"
+            android:fontFamily="@font/roboto_bold"
             android:text="Edit"
             android:textAlignment="textEnd"
-            android:textColor="#F44336"
-            android:textStyle="bold" />
+            android:textColor="#FC6600"
+            android:textSize="16sp" />
 
 
     </LinearLayout>
@@ -214,7 +239,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="3dp">
+        android:padding="7dp">
 
         <TextView
 
@@ -222,8 +247,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_bold"
             android:text="Email"
-            android:textColor="#333030" />
+            android:textColor="#404040"
+            android:textSize="16sp" />
 
         <TextView
 
@@ -231,7 +258,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:text=" " />
+            android:fontFamily="@font/roboto_regular"
+            android:text=" "
+            android:textColor="#404040"
+            android:textSize="16sp" />
 
 
     </LinearLayout>

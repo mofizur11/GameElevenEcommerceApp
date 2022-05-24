@@ -173,8 +173,8 @@
         android:layout_height="match_parent"
         android:layout_marginTop="4dp"
         android:background="#F3F3F3"
-        android:scrollbars="none"
-        android:fillViewport="true">
+        android:fillViewport="true"
+        android:scrollbars="none">
 
         <RelativeLayout
             android:layout_width="match_parent"
