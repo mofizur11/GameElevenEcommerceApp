@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GameElevenEcommerceApp">
         <activity
+            android:name=".activity.ProfileEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CheckOutActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.ProductDetailsActivity"
             android:exported="false" />
         <activity

@@ -18,6 +18,7 @@ import androidx.fragment.app.Fragment;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.soft.gameelevenecommerceapp.R;
+import com.soft.gameelevenecommerceapp.activity.ProfileEditActivity;
 import com.soft.gameelevenecommerceapp.activity.SignInActivity;
 
 public class AccountFragment extends Fragment {
@@ -28,7 +29,7 @@ public class AccountFragment extends Fragment {
     private BottomSheetDialog mBottomSheetDialog;
     private View bottom_sheet;
 
-    TextView order, address, logout;
+    TextView order, profile, address, language, logout;
 
     @Nullable
     @Override
@@ -37,7 +38,9 @@ public class AccountFragment extends Fragment {
         View view = inflater.inflate(R.layout.account_fragment, container, false);
 
         address = view.findViewById(R.id.address);
+        profile = view.findViewById(R.id.profile);
         order = view.findViewById(R.id.order);
+        language = view.findViewById(R.id.language);
         logout = view.findViewById(R.id.logout);
 
         bottom_sheet = view.findViewById(R.id.bottom_sheet);
@@ -53,6 +56,18 @@ public class AccountFragment extends Fragment {
             public void onClick(View view) {
                 requireActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new OrderFragment(), null).commit();
 
+            }
+        });
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), ProfileEditActivity.class));
+            }
+        });
+        language.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), ProfileEditActivity.class));
             }
         });
 
@@ -81,7 +96,7 @@ public class AccountFragment extends Fragment {
             mBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
         }
 
-        final View view = getLayoutInflater().inflate(R.layout.address_bottom, null);
+        final View view = getLayoutInflater().inflate(R.layout.save_address, null);
 
         mBottomSheetDialog = new BottomSheetDialog(getActivity());
         mBottomSheetDialog.setContentView(view);

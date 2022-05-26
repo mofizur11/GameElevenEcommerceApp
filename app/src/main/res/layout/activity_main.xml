@@ -27,42 +27,35 @@
         android:layout_height="0dp"
         android:layout_weight="1">
 
-
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="18dp"
-            android:backgroundTint="#D81D4C"
+            android:backgroundTint="@color/icon_selected"
             android:contentDescription="@string/todo"
             android:src="@drawable/logo_white"
-            android:tint="@color/white"
+            android:tint="#FFFFFF"
             app:borderWidth="0dp"
-            app:fabCustomSize="64dp"
             app:maxImageSize="40dp" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/bottom_card"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            app:cardElevation="5dp">
+            android:layout_alignParentBottom="true">
 
             <com.google.android.material.bottomnavigation.BottomNavigationView
                 android:id="@+id/bottom_navigation_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
-                android:background="@color/white"
+                android:background="#FFFFFF"
                 android:paddingHorizontal="7dp"
                 android:paddingTop="3dp"
                 android:paddingBottom="4dp"
-                app:itemIconTint="@color/bottom_nav_color"
-                app:itemRippleColor="@color/bottom_nav_color"
-                app:itemTextAppearanceActive="@style/Widget.Material3.BottomNavigationView"
                 app:labelVisibilityMode="labeled"
                 app:menu="@menu/buttom_navigation_menu" />
 

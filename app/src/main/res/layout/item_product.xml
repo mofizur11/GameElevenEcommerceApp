@@ -77,8 +77,12 @@
                             android:clickable="true"
                             android:focusable="true"
                             android:src="@drawable/cart"
-                            app:backgroundTint="#EFECEC"
-                            app:fabSize="mini" />
+                            app:backgroundTint="#F4F4F4"
+                            app:borderWidth="1dp"
+                            app:elevation="0dp"
+                            app:fabSize="mini"
+                            app:tint="@null" />
+
                     </LinearLayout>
 
 

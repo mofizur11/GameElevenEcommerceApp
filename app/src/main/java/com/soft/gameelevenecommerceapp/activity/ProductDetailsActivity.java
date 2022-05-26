@@ -7,11 +7,14 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.soft.gameelevenecommerceapp.R;
@@ -31,6 +34,9 @@ public class ProductDetailsActivity extends AppCompatActivity {
     private int dotscount;
     private ImageView[] dots;
 
+
+    TextView buy_now;
+
     private ProductAdapter pAdapter;
     private RecyclerView productRV;
     Data data;
@@ -44,6 +50,16 @@ public class ProductDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product_details);
         initToolbar();
+
+        buy_now = findViewById(R.id.buy_now);
+
+
+        buy_now.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ProductDetailsActivity.this,CheckOutActivity.class));
+            }
+        });
 
 
         productRV = findViewById(R.id.product_rv);

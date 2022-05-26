@@ -90,10 +90,10 @@
                     android:clickable="true"
                     android:focusable="true"
                     android:src="@drawable/home"
-                    android:tint="@android:color/white"
-                    app:backgroundTint="#BFB9B9"
-                    app:elevation="0dp"
-                    app:fabSize="mini" />
+                    app:backgroundTint="#FFFFFF"
+                    app:elevation="2dp"
+                    app:fabSize="mini"
+                    app:tint="@null" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -135,11 +135,11 @@
                     android:layout_height="42dp"
                     android:clickable="true"
                     android:focusable="true"
-                    android:src="@drawable/home"
-                    android:tint="@android:color/white"
-                    app:backgroundTint="#BFB9B9"
-                    app:elevation="0dp"
-                    app:fabSize="mini" />
+                    android:src="@drawable/user"
+                    app:backgroundTint="#FFFFFF"
+                    app:elevation="2dp"
+                    app:fabSize="mini"
+                    app:tint="@null" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -151,6 +151,7 @@
 
 
                     <TextView
+                        android:id="@+id/profile"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/roboto_regular"
@@ -181,10 +182,10 @@
                     android:clickable="true"
                     android:focusable="true"
                     android:src="@drawable/address"
-                    android:tint="@android:color/white"
-                    app:backgroundTint="#BFB9B9"
-                    app:elevation="0dp"
-                    app:fabSize="mini" />
+                    app:backgroundTint="#FFFFFF"
+                    app:elevation="2dp"
+                    app:fabSize="mini"
+                    app:tint="@null" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -227,10 +228,10 @@
                     android:clickable="true"
                     android:focusable="true"
                     android:src="@drawable/translate"
-                    android:tint="@android:color/white"
-                    app:backgroundTint="#BFB9B9"
-                    app:elevation="0dp"
-                    app:fabSize="mini" />
+                    app:backgroundTint="#FFFFFF"
+                    app:elevation="2dp"
+                    app:fabSize="mini"
+                    app:tint="@null" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -242,6 +243,7 @@
 
 
                     <TextView
+                        android:id="@+id/language"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/roboto_regular"
@@ -276,11 +278,11 @@
                 android:layout_height="42dp"
                 android:clickable="true"
                 android:focusable="true"
-                android:src="@drawable/lock"
-                android:tint="@android:color/white"
-                app:backgroundTint="#BFB9B9"
-                app:elevation="0dp"
-                app:fabSize="mini" />
+                android:src="@drawable/exit"
+                app:backgroundTint="#FFFFFF"
+                app:elevation="2dp"
+                app:fabSize="mini"
+                app:tint="@null" />
 
             <LinearLayout
                 android:layout_width="match_parent"

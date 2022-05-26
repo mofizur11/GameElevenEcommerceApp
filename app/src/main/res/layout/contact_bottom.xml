@@ -29,10 +29,10 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:layout_marginTop="15dp"
             android:backgroundTint="@color/icon_selected"
-            android:padding="15dp"
+            android:fontFamily="@font/roboto_med"
             android:text="Save Contact"
             android:textColor="#FFFFFF"
             android:textSize="14sp" />
