@@ -1,5 +1,6 @@
 package com.soft.gameelevenecommerceapp.fragment;
 
+import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Build;
@@ -20,6 +21,8 @@ import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.soft.gameelevenecommerceapp.R;
 import com.soft.gameelevenecommerceapp.activity.ProfileEditActivity;
 import com.soft.gameelevenecommerceapp.activity.SignInActivity;
+
+import org.w3c.dom.Text;
 
 public class AccountFragment extends Fragment {
 
@@ -67,7 +70,7 @@ public class AccountFragment extends Fragment {
         language.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getContext(), ProfileEditActivity.class));
+                showDialog();
             }
         });
 
@@ -111,6 +114,23 @@ public class AccountFragment extends Fragment {
                 mBottomSheetDialog = null;
             }
         });
+    }
+    
+    
+    public void showDialog(){
+        final Dialog dialog = new Dialog(getContext());
+        dialog.setCancelable(false);
+        dialog.setContentView(R.layout.aleart_language);
+
+        TextView cancel = dialog.findViewById(R.id.cancel);
+        cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
+
+        dialog.show();
     }
 }
 

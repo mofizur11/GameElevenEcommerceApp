@@ -26,10 +26,27 @@
                 android:src="@drawable/back" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginTop="18dp"
                 android:text="Shopping Cart" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="end">
+
+                <ImageView
+                    android:id="@+id/delete"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/delete" />
+
+
+            </LinearLayout>
 
 
         </LinearLayout>
@@ -49,17 +66,17 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="#FFFFFF"
-        android:padding="10sp"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="10sp">
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/tick"
-            android:src="@drawable/ic_done"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:clickable="true"
             android:focusable="true"
+            android:src="@drawable/ic_done"
             android:tint="@android:color/white"
             app:backgroundTint="@color/icon_selected"
             app:elevation="0dp"

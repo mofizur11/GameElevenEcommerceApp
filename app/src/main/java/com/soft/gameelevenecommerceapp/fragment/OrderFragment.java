@@ -43,7 +43,7 @@ public class OrderFragment extends Fragment {
         drawerHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                requireActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment(), null).commit();
+                requireActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AccountFragment(), null).commit();
             }
         });
 

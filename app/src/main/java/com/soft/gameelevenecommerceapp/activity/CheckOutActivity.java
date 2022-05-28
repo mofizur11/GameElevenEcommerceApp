@@ -8,12 +8,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.soft.gameelevenecommerceapp.R;
+import com.soft.gameelevenecommerceapp.fragment.AccountFragment;
 
 public class CheckOutActivity extends AppCompatActivity {
 
@@ -21,6 +23,7 @@ public class CheckOutActivity extends AppCompatActivity {
     TextView billingChange;
     ImageView address, phone;
     Button order;
+    ImageButton drawerHome;
 
     private BottomSheetBehavior mBehavior;
     private BottomSheetDialog mBottomSheetDialog;
@@ -40,7 +43,6 @@ public class CheckOutActivity extends AppCompatActivity {
 
         bottom_sheet = findViewById(R.id.bottom_sheet);
         mBehavior = BottomSheetBehavior.from(bottom_sheet);
-
 
 
         billingChange.setOnClickListener(new View.OnClickListener() {
@@ -67,7 +69,15 @@ public class CheckOutActivity extends AppCompatActivity {
         order.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-              showPayBottomSheetDialog();
+                showPayBottomSheetDialog();
+            }
+        });
+
+        drawerHome = findViewById(R.id.drawer_home);
+        drawerHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
             }
         });
 
@@ -93,7 +103,6 @@ public class CheckOutActivity extends AppCompatActivity {
             }
         });
     }
-
 
 
     private void showAddressBottomSheetDialog() {

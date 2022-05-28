@@ -177,8 +177,8 @@
         android:layout_height="match_parent"
         android:layout_marginTop="4dp"
         android:background="#F3F3F3"
-        android:fillViewport="true"
         android:clipToPadding="false"
+        android:fillViewport="true"
         android:scrollbars="none"
         android:scrollingCache="true"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
@@ -252,141 +252,72 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
+                        android:background="#FFFFFF"
                         app:cardCornerRadius="10dp">
 
-
-                        <RelativeLayout
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:background="#FFFFFF"
-                            android:padding="5dp">
+                            android:orientation="vertical">
+
 
                             <LinearLayout
                                 android:id="@+id/flash_deals"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Flash Deals"
-                                    android:textSize="16sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="68:45:15"
-                                    android:textAlignment="textEnd"
-                                    android:textColor="@color/icon_selected"
-                                    android:textSize="16sp" />
-
-
-                            </LinearLayout>
-
-
-                            <androidx.recyclerview.widget.RecyclerView
-                                android:id="@+id/flash_deals_rv"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@id/flash_deals"
-                                android:padding="10dp"
-                                tools:itemCount="1"
-                                tools:listitem="@layout/item_deals">
-
-                            </androidx.recyclerview.widget.RecyclerView>
-                        </RelativeLayout>
-
-
-                    </androidx.cardview.widget.CardView>
-
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:padding="15dp"
-                        app:cardCornerRadius="10dp">
-
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="#E4DCF6"
-                            android:padding="5dp">
-
-                            <LinearLayout
-                                android:id="@+id/daily_features"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Daily Features"
-                                    android:textSize="16sp"
-                                    android:textStyle="bold" />
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@id/daily_features"
-                                android:background="#E4E4FC"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="10dp"
                                 android:orientation="horizontal"
-                                android:weightSum="4">
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/roboto_med"
+                                    android:gravity="start"
+                                    android:text="Flash Deals"
+                                    android:textAlignment="textStart"
+                                    android:textColor="#434343"
+                                    android:textSize="13sp" />
 
                                 <LinearLayout
+
                                     android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1">
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="end">
+
+                                    <ImageView
+                                        android:layout_width="14dp"
+                                        android:layout_height="14dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginEnd="5dp"
+                                        android:background="@drawable/round_color_big"
+                                        android:src="@drawable/flash" />
 
 
-                                    <androidx.cardview.widget.CardView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="125dp"
-                                        android:backgroundTint="@color/icon_selected"
-                                        app:cardCornerRadius="10dp">
+                                    <TextView
 
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:layout_gravity="center"
-                                            android:text="@string/hot_sales_50_off"
-                                            android:textAlignment="center"
-                                            android:textColor="@color/white"
-                                            android:textSize="18sp" />
-
-
-                                    </androidx.cardview.widget.CardView>
-
-                                </LinearLayout>
-
-
-                                <LinearLayout
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="3"
-                                    android:gravity="center">
-
-
-                                    <androidx.recyclerview.widget.RecyclerView
-                                        android:id="@+id/daily_features_rv"
-                                        android:layout_width="match_parent"
+                                        android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        tools:itemCount="1"
-                                        tools:listitem="@layout/item_daily_features" />
+                                        android:fontFamily="@font/roboto_med"
+                                        android:gravity="end"
+                                        android:text="68:45:15"
+                                        android:textAlignment="textEnd"
+                                        android:textColor="@color/icon_selected"
+                                        android:textSize="13sp" />
+
 
                                 </LinearLayout>
 
 
                             </LinearLayout>
-                        </RelativeLayout>
+
+                            <include layout="@layout/flash_deals_section" />
+
+                        </LinearLayout>
 
 
                     </androidx.cardview.widget.CardView>
@@ -396,7 +327,90 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
-                        android:background="#FED3B9"
+                        android:padding="10dp"
+                        app:cardCornerRadius="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#96E4E4FC"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:background="#96E4E4FC"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_med"
+                                    android:text="Daily Features"
+                                    android:textColor="#434343"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+
+                            <include layout="@layout/daily_features_section" />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        app:cardCornerRadius="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#96FED3B9"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:background="#96FED3B9"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_med"
+                                    android:text="Hot Categories"
+                                    android:textColor="#434343"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+
+                            <include layout="@layout/hot_categories_section" />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:elevation="0dp"
                         android:padding="15dp"
                         app:cardCornerRadius="10dp">
 
@@ -404,54 +418,8 @@
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:background="#ECDAC0"
-                            android:padding="5dp">
-
-                            <LinearLayout
-                                android:id="@+id/hot_category"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Hot Categories"
-                                    android:textSize="16sp"
-                                    android:textStyle="bold" />
-
-
-                            </LinearLayout>
-
-
-                            <androidx.recyclerview.widget.RecyclerView
-                                android:id="@+id/hot_category_rv"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@id/hot_category"
-                                tools:itemCount="1"
-                                tools:listitem="@layout/item_hot_categories">
-
-                            </androidx.recyclerview.widget.RecyclerView>
-                        </RelativeLayout>
-
-
-                    </androidx.cardview.widget.CardView>
-
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:padding="15dp">
-
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="#C1CDE3"
-                            android:padding="5dp">
+                            android:background="#1224CAAA"
+                            android:padding="15dp">
 
                             <LinearLayout
                                 android:id="@+id/brand"
@@ -463,17 +431,19 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="10dp"
+                                    android:fontFamily="@font/roboto_med"
                                     android:text="Brands"
-                                    android:textSize="16sp"
-                                    android:textStyle="bold" />
+                                    android:textColor="#434343"
+                                    android:textSize="13sp" />
 
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_regular"
                                     android:text="View More"
                                     android:textAlignment="textEnd"
-                                    android:textColor="#8A8A81"
-                                    android:textSize="16sp" />
+                                    android:textColor="#8D8D8D"
+                                    android:textSize="11sp" />
 
 
                             </LinearLayout>
@@ -484,6 +454,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@id/brand"
+                                android:layout_marginTop="5dp"
                                 tools:itemCount="1"
                                 tools:listitem="@layout/item_brand">
 
@@ -494,21 +465,15 @@
                     </androidx.cardview.widget.CardView>
 
 
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:padding="10dp"
-                        app:cardElevation="3dp">
-
 
                         <RelativeLayout
+                            android:background="#F3F3F3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:background="#ECDAC0"
                             android:padding="5dp">
 
                             <LinearLayout
+                                android:background="#F3F3F3"
                                 android:id="@+id/product"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -518,9 +483,10 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_med"
                                     android:text="Best Sale Products"
-                                    android:textSize="16sp"
-                                    android:textStyle="bold" />
+                                    android:textColor="#434343"
+                                    android:textSize="13sp" />
 
 
                             </LinearLayout>
@@ -538,7 +504,6 @@
                         </RelativeLayout>
 
 
-                    </androidx.cardview.widget.CardView>
 
 
                 </LinearLayout>

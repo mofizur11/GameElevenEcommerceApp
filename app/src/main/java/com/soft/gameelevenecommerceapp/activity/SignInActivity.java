@@ -9,6 +9,8 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.soft.gameelevenecommerceapp.R;
+import com.soft.gameelevenecommerceapp.fragment.AccountFragment;
+import com.soft.gameelevenecommerceapp.fragment.HomeFragment;
 
 public class SignInActivity extends AppCompatActivity {
 

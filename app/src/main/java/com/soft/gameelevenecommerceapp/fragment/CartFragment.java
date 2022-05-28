@@ -1,10 +1,14 @@
 package com.soft.gameelevenecommerceapp.fragment;
 
+import android.app.Dialog;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -25,6 +29,8 @@ public class CartFragment extends Fragment {
     CartAdapter adapter;
     Data data;
 
+    ImageView delete;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -32,6 +38,14 @@ public class CartFragment extends Fragment {
         View view = inflater.inflate(R.layout.cart_fragment,container,false);
 
         recyclerView = view.findViewById(R.id.cart_recycler);
+
+        delete = view.findViewById(R.id.delete);
+        delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showDialog();
+            }
+        });
 
         data = new Data();
 
@@ -51,7 +65,30 @@ public class CartFragment extends Fragment {
     }
 
 
+    public void showDialog(){
+        final Dialog dialog = new Dialog(getContext());
+        dialog.setCancelable(false);
+        dialog.setContentView(R.layout.aleart_delete);
 
+        TextView cancel = dialog.findViewById(R.id.cancel);
+        TextView delete = dialog.findViewById(R.id.delete);
+        cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
+
+        delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getContext(), "Item Deleted", Toast.LENGTH_SHORT).show();
+                dialog.dismiss();
+            }
+        });
+
+        dialog.show();
+    }
 
 }
 

@@ -11,17 +11,18 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.soft.gameelevenecommerceapp.R;
 
-public class SliderAdapter extends PagerAdapter {
+
+public class HomeSliderAdapter extends PagerAdapter {
 
     private Context context;
     private LayoutInflater layoutInflater;
     private Integer[] images;
 
-    public SliderAdapter(Context context) {
+    public HomeSliderAdapter(Context context) {
         this.context = context;
     }
 
-    public SliderAdapter(Context context, Integer[] images) {
+    public HomeSliderAdapter(Context context, Integer[] images) {
         this.context = context;
         this.images = images;
     }
@@ -40,7 +41,7 @@ public class SliderAdapter extends PagerAdapter {
     public Object instantiateItem(ViewGroup container, final int position) {
 
         layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View view = layoutInflater.inflate(R.layout.item_slider, null);
+        View view = layoutInflater.inflate(R.layout.item_home_slider, null);
         ImageView imageView = view.findViewById(R.id.imageView);
         imageView.setImageResource(images[position]);
 

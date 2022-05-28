@@ -23,6 +23,7 @@ import com.soft.gameelevenecommerceapp.R;
 import com.soft.gameelevenecommerceapp.adapter.BrandAdapter;
 import com.soft.gameelevenecommerceapp.adapter.DailyFeaturesAdapter;
 import com.soft.gameelevenecommerceapp.adapter.DealsAdapter;
+import com.soft.gameelevenecommerceapp.adapter.HomeSliderAdapter;
 import com.soft.gameelevenecommerceapp.adapter.HotCategoryAdapter;
 import com.soft.gameelevenecommerceapp.adapter.ProductAdapter;
 import com.soft.gameelevenecommerceapp.adapter.SliderAdapter;
@@ -51,6 +52,7 @@ public class HomeFragment extends Fragment {
     private ProductAdapter pAdapter;
 
 
+
     private Integer[] images = {R.drawable.slide1, R.drawable.slide2, R.drawable.slide3};
 
     public HomeFragment() {
@@ -67,29 +69,29 @@ public class HomeFragment extends Fragment {
         data = new Data();
 
 
-        flashDealsRV = view.findViewById(R.id.flash_deals_rv);
-        dailyFeaturesRV = view.findViewById(R.id.daily_features_rv);
-        HotCategoriesRV = view.findViewById(R.id.hot_category_rv);
+      //  flashDealsRV = view.findViewById(R.id.flash_deals_rv);
+ //       dailyFeaturesRV = view.findViewById(R.id.daily_features_rv);
+  //      HotCategoriesRV = view.findViewById(R.id.hot_category_rv);
         brandRV = view.findViewById(R.id.brand_rv);
         productRV = view.findViewById(R.id.product_rv);
 
 
-        dAdapter = new DealsAdapter(data.getAllDealsList(), getContext());
-        RecyclerView.LayoutManager dLayoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
-        flashDealsRV.setLayoutManager(dLayoutManager);
-        flashDealsRV.setAdapter(dAdapter);
+//        dAdapter = new DealsAdapter(data.getAllDealsList(), getContext());
+//        RecyclerView.LayoutManager dLayoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
+//        flashDealsRV.setLayoutManager(dLayoutManager);
+//        flashDealsRV.setAdapter(dAdapter);
 
 
-        dFAdapter = new DailyFeaturesAdapter(data.getAllDailyFeaturesList(), getContext());
-        RecyclerView.LayoutManager dFLayoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
-        dailyFeaturesRV.setLayoutManager(dFLayoutManager);
-        dailyFeaturesRV.setAdapter(dFAdapter);
+//        dFAdapter = new DailyFeaturesAdapter(data.getAllDailyFeaturesList(), getContext());
+//        RecyclerView.LayoutManager dFLayoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
+//        dailyFeaturesRV.setLayoutManager(dFLayoutManager);
+//        dailyFeaturesRV.setAdapter(dFAdapter);
 
 
-        hCAdapter = new HotCategoryAdapter(data.getAllHotCategoriesList(), getContext());
-        RecyclerView.LayoutManager hCLayoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
-        HotCategoriesRV.setLayoutManager(hCLayoutManager);
-        HotCategoriesRV.setAdapter(hCAdapter);
+//        hCAdapter = new HotCategoryAdapter(data.getAllHotCategoriesList(), getContext());
+//        RecyclerView.LayoutManager hCLayoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
+//        HotCategoriesRV.setLayoutManager(hCLayoutManager);
+//        HotCategoriesRV.setAdapter(hCAdapter);
 
         brandAdapter = new BrandAdapter(data.getAllBrandModelList(), getContext());
         RecyclerView.LayoutManager bLayoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
@@ -107,7 +109,7 @@ public class HomeFragment extends Fragment {
 
         sliderDotspanel = view.findViewById(R.id.SliderDots);
 
-        SliderAdapter viewPagerAdapter = new SliderAdapter(getContext(), images);
+        HomeSliderAdapter viewPagerAdapter = new HomeSliderAdapter(getContext(), images);
 
         viewPager.setAdapter(viewPagerAdapter);
 

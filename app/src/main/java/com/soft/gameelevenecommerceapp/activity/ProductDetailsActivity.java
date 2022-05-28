@@ -7,16 +7,22 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.soft.gameelevenecommerceapp.R;
 import com.soft.gameelevenecommerceapp.adapter.ProductAdapter;
 import com.soft.gameelevenecommerceapp.adapter.SliderAdapter;
@@ -42,7 +48,14 @@ public class ProductDetailsActivity extends AppCompatActivity {
     Data data;
 
 
-    private Integer[] images = {R.drawable.slide1, R.drawable.slide2, R.drawable.slide3};
+
+    private BottomSheetBehavior mBehavior;
+    private BottomSheetDialog mBottomSheetDialog;
+    private View bottom_sheet;
+
+
+
+    private Integer[] images = {R.drawable.headphones, R.drawable.chair, R.drawable.mouse, R.drawable.cpu_box};
 
 
     @Override
@@ -53,12 +66,16 @@ public class ProductDetailsActivity extends AppCompatActivity {
 
         buy_now = findViewById(R.id.buy_now);
 
+        bottom_sheet = findViewById(R.id.bottom_sheet);
+        mBehavior = BottomSheetBehavior.from(bottom_sheet);
+
+
 
         buy_now.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ProductDetailsActivity.this,CheckOutActivity.class));
-            }
+                showBottomSheetDialog();
+               }
         });
 
 
@@ -166,6 +183,51 @@ public class ProductDetailsActivity extends AppCompatActivity {
         }, 500, 4000);
     }
 
+
+
+
+    private void showBottomSheetDialog() {
+        if (mBehavior.getState() == BottomSheetBehavior.STATE_EXPANDED) {
+            mBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
+        }
+
+        final View view = getLayoutInflater().inflate(R.layout.bottom_single_product, null);
+
+        Button addtocart = view.findViewById(R.id.addtocart);
+        Button checkout = view.findViewById(R.id.checkout);
+
+
+        addtocart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(ProductDetailsActivity.this,"Cart added",Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        checkout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ProductDetailsActivity.this,CheckOutActivity.class));
+            }
+        });
+
+        mBottomSheetDialog = new BottomSheetDialog(ProductDetailsActivity.this);
+        mBottomSheetDialog.setContentView(view);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            mBottomSheetDialog.getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        }
+
+        mBottomSheetDialog.show();
+        mBottomSheetDialog.setOnDismissListener(new DialogInterface.OnDismissListener() {
+            @Override
+            public void onDismiss(DialogInterface dialog) {
+                mBottomSheetDialog = null;
+            }
+        });
+    }
+
+
+
     @Override
     public void onStop() {
         timer.cancel();
@@ -177,4 +239,7 @@ public class ProductDetailsActivity extends AppCompatActivity {
         timer.cancel();
         super.onPause();
     }
+
+
+
 }

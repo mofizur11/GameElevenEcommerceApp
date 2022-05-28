@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -71,7 +72,6 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.MyViewHolder> 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
         ImageView cartImage;
         TextView cartTitle, cartModel, cartPrice, cartCount;
-        ImageButton cartCheck, cartPlus, cartMinus;
         FloatingActionButton floatingActionButton;
 
         public MyViewHolder(@NonNull View itemView) {
@@ -82,9 +82,6 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.MyViewHolder> 
             cartPrice = itemView.findViewById(R.id.cart_price);
             cartCount = itemView.findViewById(R.id.cart_count);
             floatingActionButton = itemView.findViewById(R.id.tick);
-//            cartCheck = itemView.findViewById(R.id.cart_check);
-//            cartPlus = itemView.findViewById(R.id.cart_plus);
-//            cartMinus = itemView.findViewById(R.id.cart_minus);
         }
     }
 }

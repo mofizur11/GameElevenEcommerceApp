@@ -11,6 +11,7 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.soft.gameelevenecommerceapp.R;
+import com.soft.gameelevenecommerceapp.fragment.AccountFragment;
 import com.soft.gameelevenecommerceapp.fragment.HomeFragment;
 
 public class SignUpActivity extends AppCompatActivity {
@@ -28,7 +29,7 @@ public class SignUpActivity extends AppCompatActivity {
         drawerHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                finish();
+            finish();
             }
         });
 
@@ -39,11 +40,4 @@ public class SignUpActivity extends AppCompatActivity {
 
     }
 
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if (item.getItemId() == android.R.id.home) {
-            finish();
-        }
-        return super.onOptionsItemSelected(item);
-    }
 }

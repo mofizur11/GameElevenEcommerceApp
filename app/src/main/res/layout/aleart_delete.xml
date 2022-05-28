@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textSize="14sp"
+        android:textColor="#1F1F1F"
+        android:text="Are you sure you want to delete the selected
+Products from the cart?"
+        android:layout_margin="20dp"
+        android:padding="15dp"
+        android:fontFamily="@font/roboto_med"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/icon_selected"
+            android:fontFamily="@font/roboto_regular"
+            android:text="CANCEL"
+            android:layout_marginEnd="15dp"
+            android:textSize="14sp" />
+
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_marginEnd="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0A0A5A"
+            android:fontFamily="@font/roboto_regular"
+            android:text="OK"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:weightSum="10"
     tools:context=".activity.ProductDetailsActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+
 
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -19,6 +26,7 @@
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/app_bar_layout"
             android:layout_width="match_parent"
+            android:background="#FFFFFF"
             android:layout_height="250dp"
             android:fitsSystemWindows="true"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
@@ -28,7 +36,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fitsSystemWindows="true"
-                app:contentScrim="?attr/colorPrimary"
+                app:contentScrim="#FFFFFF"
                 app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
                 <RelativeLayout
@@ -40,8 +48,8 @@
                         android:id="@+id/viewPager"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_alignParentTop="true"
-                        android:background="@drawable/slide1">
+                        android:layout_centerInParent="true"
+                        android:background="#FFFFFF">
 
                     </androidx.viewpager.widget.ViewPager>
 
@@ -79,9 +87,8 @@
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@android:color/white"
+            android:background="#F3F3F3"
             android:clipToPadding="false"
-            android:padding="10dp"
             android:scrollbars="none"
             android:scrollingCache="true"
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
@@ -103,9 +110,10 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:layout_weight="3"
+                        android:fontFamily="@font/roboto_med"
                         android:text="500.00 SAR"
                         android:textColor="@color/icon_selected"
-                        android:textSize="18sp" />
+                        android:textSize="21sp" />
 
                     <ImageButton
                         style="@style/Widget.AppCompat.Button.Borderless"
@@ -131,7 +139,9 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:text="@string/del"
-                        android:textSize="14sp" />
+                        android:textColor="#CBCBCB"
+                        android:fontFamily="@font/roboto_med"
+                        android:textSize="16sp" />
 
 
                     <TextView
@@ -139,8 +149,9 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:text="-46%"
-                        android:textColor="@color/black"
-                        android:textSize="14sp" />
+                        android:fontFamily="@font/roboto_med"
+                        android:textColor="#868686"
+                        android:textSize="16sp" />
 
 
                 </LinearLayout>
@@ -157,7 +168,9 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:text="@string/des"
-                        android:textSize="14sp" />
+                        android:fontFamily="@font/roboto_med"
+                        android:textColor="#333333"
+                        android:textSize="16sp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -183,19 +196,32 @@
                             android:maxLines="1"
                             android:singleLine="true"
                             android:text="4.6"
+                            android:textColor="#868686"
+                            android:fontFamily="@font/roboto_med"
                             android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
                     </LinearLayout>
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="80dp"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginEnd="10dp"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/coupon_banner" />
 
+                    <LinearLayout
+                        android:background="#FFFFFF"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/coupon_banner" />
+
+
+
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -651,4 +677,17 @@
 
     </LinearLayout>
 
-</LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--bottom sheet container-->
+    <FrameLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/bottom_sheet_behavior" />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

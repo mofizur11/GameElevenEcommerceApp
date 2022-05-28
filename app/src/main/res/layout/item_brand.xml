@@ -1,51 +1,33 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="100dp"
-    android:layout_margin="10dp"
-    android:layout_height="140dp">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:orientation="vertical">
+
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/card_view"
-        android:layout_width="match_parent"
-        app:cardCornerRadius="10dp"
-        android:layout_height="wrap_content">
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:elevation="0dp"
+        app:cardCornerRadius="10dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:gravity="center"
-            android:orientation="vertical">
+        <ImageView
+            android:id="@+id/brand_image"
+            android:layout_width="74dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:src="@drawable/mouse" />
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#FAF6F6">
-
-                <ImageView
-                    android:id="@+id/brand_image"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_centerHorizontal="true"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/deals1" />
-            </RelativeLayout>
-
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:id="@+id/cImage"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/fedex_logo"
-                    android:layout_centerHorizontal="true"/>
-
-            </RelativeLayout>
-
-
-        </LinearLayout>
     </androidx.cardview.widget.CardView>
+
+
+    <ImageView
+        android:id="@+id/cImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/fedex_logo" />
+
+
 </LinearLayout>
